@@ -12,6 +12,9 @@
         <router-link to="/about">About</router-link>
       </li>
     </ul>
+    <button>
+      <router-link to="/login">Log out!</router-link>
+    </button>
   </div>
 </template>
 

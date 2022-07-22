@@ -1,29 +1,7 @@
 <template>
-  <div class="home">home</div>
-  <button @click="click">click</button>
-  {{ userName }}
+  <div class="home">home page!</div>
 </template>
 
 <script>
-export default {
-  created() {
-    console.log("create");
-  },
-  data() {
-    return {
-      userName: "tiennguyen",
-    };
-  },
-  mounted() {
-    console.log("mounted");
-  },
-  methods: {
-    click() {
-      this.userName = "Linh";
-    },
-  },
-  unmounted() {
-    console.log("unmounted");
-  },
-};
+export default {};
 </script>
