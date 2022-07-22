@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <div class="home">home</div>
+  <button @click="click">click</button>
+  {{ userName }}
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
-  name: "HomeView",
-  components: {
-    HelloWorld,
+  created() {
+    console.log("create");
+  },
+  data() {
+    return {
+      userName: "tiennguyen",
+    };
+  },
+  mounted() {
+    console.log("mounted");
+  },
+  methods: {
+    click() {
+      this.userName = "Linh";
+    },
+  },
+  unmounted() {
+    console.log("unmounted");
   },
 };
 </script>
